@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3E90732C222B1D00802E61 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E90722C222B1D00802E61 /* HomeViewModel.swift */; };
+		3F3E90772C22303F00802E61 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E90762C22303F00802E61 /* HomeScreen.swift */; };
 		3F8269E42C1E13C500C7C796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8269E32C1E13C500C7C796 /* AppDelegate.swift */; };
 		3F8269E62C1E13C500C7C796 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8269E52C1E13C500C7C796 /* SceneDelegate.swift */; };
-		3F8269E82C1E13C500C7C796 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8269E72C1E13C500C7C796 /* ViewController.swift */; };
+		3F8269E82C1E13C500C7C796 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8269E72C1E13C500C7C796 /* HomeVC.swift */; };
 		3F8269ED2C1E13C700C7C796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8269EC2C1E13C700C7C796 /* Assets.xcassets */; };
 		3F8269F02C1E13C700C7C796 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3F8269EF2C1E13C700C7C796 /* Base */; };
 		3F8269FB2C1E13C700C7C796 /* globoplay_desafio_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8269FA2C1E13C700C7C796 /* globoplay_desafio_mobileTests.swift */; };
@@ -36,10 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3E90722C222B1D00802E61 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3F3E90762C22303F00802E61 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3F8269E02C1E13C500C7C796 /* globoplay-desafio-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "globoplay-desafio-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8269E32C1E13C500C7C796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F8269E52C1E13C500C7C796 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F8269E72C1E13C500C7C796 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F8269E72C1E13C500C7C796 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3F8269EC2C1E13C700C7C796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F8269EF2C1E13C700C7C796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F8269F12C1E13C700C7C796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +80,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3E90702C222AAD00802E61 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E90712C222AB600802E61 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3F3E90712C222AB600802E61 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E90782C22305F00802E61 /* ViewModel */,
+				3F3E90792C22307900802E61 /* Screen */,
+				3F8269E72C1E13C500C7C796 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3F3E90782C22305F00802E61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E90722C222B1D00802E61 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F3E90792C22307900802E61 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E90762C22303F00802E61 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		3F8269D72C1E13C500C7C796 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +137,9 @@
 		3F8269E22C1E13C500C7C796 /* globoplay-desafio-mobile */ = {
 			isa = PBXGroup;
 			children = (
+				3F3E90702C222AAD00802E61 /* Features */,
 				3F8269E32C1E13C500C7C796 /* AppDelegate.swift */,
 				3F8269E52C1E13C500C7C796 /* SceneDelegate.swift */,
-				3F8269E72C1E13C500C7C796 /* ViewController.swift */,
 				3F8269EC2C1E13C700C7C796 /* Assets.xcassets */,
 				3F8269EE2C1E13C700C7C796 /* LaunchScreen.storyboard */,
 				3F8269F12C1E13C700C7C796 /* Info.plist */,
@@ -257,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F8269E82C1E13C500C7C796 /* ViewController.swift in Sources */,
+				3F8269E82C1E13C500C7C796 /* HomeVC.swift in Sources */,
 				3F8269E42C1E13C500C7C796 /* AppDelegate.swift in Sources */,
+				3F3E90772C22303F00802E61 /* HomeScreen.swift in Sources */,
 				3F8269E62C1E13C500C7C796 /* SceneDelegate.swift in Sources */,
+				3F3E90732C222B1D00802E61 /* HomeViewModel.swift in Sources */,
 				3F826A142C1E272300C7C796 /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

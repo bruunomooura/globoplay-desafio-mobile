@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  globoplay-desafio-mobile
 //
 //  Created by Bruno Moura on 15/06/24.
@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
+    var viewModel: HomeViewModel = HomeViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,3 +19,6 @@ class ViewController: UIViewController {
 
 }
 
+#Preview {
+    HomeVC()
+}
